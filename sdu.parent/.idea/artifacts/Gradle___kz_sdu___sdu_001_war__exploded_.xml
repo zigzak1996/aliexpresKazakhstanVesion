@@ -1,0 +1,71 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : kz.sdu : sdu-001.war (exploded)">
+    <output-path>$PROJECT_DIR$/sdu.war/build/libs/exploded/sdu-001.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/sdu.war/build/libs/exploded/sdu-001.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="sdu.war_main/web/Web Gradle : sdu-001.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="sdu.war_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/sdu.war/out/production/resources" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="kz.sdu-sdu.server-001.jar">
+            <element id="module-output" name="sdu.server_main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/sdu.server/out/production/resources" />
+          </element>
+          <element id="archive" name="kz.sdu-sdu.register-001.jar">
+            <element id="module-output" name="sdu.register_main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/sdu.register/out/production/resources" />
+          </element>
+          <element id="archive" name="kz.sdu-sdu.controller-001.jar">
+            <element id="module-output" name="sdu.controller_main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/sdu.controller/out/production/resources" />
+          </element>
+          <element id="library" level="project" name="Gradle: kz.greetgo.mvc:greetgo.mvc:2.0.7" />
+          <element id="library" level="project" name="Gradle: kz.greetgo.depinject:greetgo.depinject:2.0.0" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-log4j12:1.7.21" />
+          <element id="library" level="project" name="Gradle: kz.greetgo.mvc:greetgo.mvc.util:2.0.7" />
+          <element id="library" level="project" name="Gradle: kz.greetgo:greetgo.util:2.0.0" />
+          <element id="library" level="project" name="Gradle: com.google.code.findbugs:annotations:2.0.1" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.7.3" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.21" />
+          <element id="library" level="project" name="Gradle: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.7.0" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.7.3" />
+          <element id="library" level="project" name="Gradle: kz.greetgo.mvc:greetgo.mvc.security:2.0.7" />
+          <element id="library" level="project" name="Gradle: kz.greetgo:greetgo.email:0.0.10" />
+          <element id="library" level="project" name="Gradle: kz.greetgo.db:greetgo.db:2.0.0" />
+          <element id="library" level="project" name="Gradle: kz.greetgo:greetgo.scheduling:2.0.0" />
+          <element id="library" level="project" name="Gradle: kz.greetgo:greetgo.conf:0.1.5" />
+          <element id="library" level="project" name="Gradle: org.json:json:20160810" />
+          <element id="library" level="project" name="Gradle: org.postgresql:postgresql:9.4-1202-jdbc42" />
+          <element id="library" level="project" name="Gradle: org.mybatis:mybatis:3.4.2" />
+          <element id="library" level="project" name="Gradle: org.liquibase:liquibase-core:3.5.1" />
+          <element id="library" level="project" name="Gradle: org.apache.commons:commons-dbcp2:2.1.1" />
+          <element id="library" level="project" name="Gradle: javax.mail:mail:1.4.7" />
+          <element id="library" level="project" name="Gradle: org.easytesting:fest-assert-core:2.0M10" />
+          <element id="library" level="project" name="Gradle: cglib:cglib:3.2.0" />
+          <element id="library" level="project" name="Gradle: org.yaml:snakeyaml:1.13" />
+          <element id="library" level="project" name="Gradle: org.apache.commons:commons-pool2:2.4.2" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Gradle: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Gradle: org.easytesting:fest-util:1.2.5" />
+          <element id="library" level="project" name="Gradle: org.ow2.asm:asm:5.0.3" />
+          <element id="library" level="project" name="Gradle: org.apache.ant:ant:1.9.4" />
+          <element id="library" level="project" name="Gradle: org.apache.ant:ant-launcher:1.9.4" />
+          <element id="library" level="project" name="Gradle: kz.greetgo.mvc:greetgo.mvc.war:2.0.7" />
+          <element id="library" level="project" name="Gradle: jstl:jstl:1.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,6 @@
+include 'sdu.client'
+include 'sdu.controller'
+include 'sdu.register'
+include 'sdu.server'
+include 'sdu.war'
+

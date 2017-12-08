@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row" >
+        <h2>Filtered List</h2>
+        <div class="searchable-container">
+            <div class="items col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix">
+
+                <div class="info-block block-info clearfix">
+                    <h5>{{data.name}}</h5>
+                    <p>{{data.description}}</p>
+                    <p>{{data.user.name + " " + data.user.surname}}</p>
+                    <span>{{data.user.telephone}}</span>
+                    <span>{{data.user.email}}</span>
+                    <button class="btn btn-default" ng-click="add()">Add to box</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

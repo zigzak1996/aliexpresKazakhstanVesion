@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+    <changeSet id="create-users-table" author="anatoliy">
+        <sql endDelimiter=";;">
+            <![CDATA[
+                create table UserTable(
+                    id varchar(50) not null,
+                    name varchar(50) not null,
+                    surname varchar(50) not null,
+                    email varchar(50) not null,
+                    password varchar(50) not null,
+                    telephone varchar(50) not null,
+                    birthday varchar(15) not null,
+                    isAccept varchar(2) not null,
+                    isWho varchar(2) not null,
+                    primary key(id)
+                )
+            ]]>
+
+        </sql>
+    </changeSet>
+
+    <changeSet author="anatoliy" id="create_token_for_user">
+        <sql endDelimiter=";;"><![CDATA[
+      create table TokenTable (
+        userid varchar(50) not null,
+        token varchar(255) not null
+      )
+    ]]></sql>
+    </changeSet>
+
+    <changeSet author="anatoliy" id="create_accept_table">
+        <sql endDelimiter=";;"><![CDATA[
+      create table accepttable (
+        userid varchar(50) not null,
+        generatedNumber varchar(255) not null
+      )
+    ]]></sql>
+    </changeSet>
+
+</databaseChangeLog>

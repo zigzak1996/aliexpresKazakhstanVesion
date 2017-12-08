@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row" >
+        <h2>Filtered List</h2>
+        <div class="searchable-container">
+            <div class="items col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix" ng-repeat="x in data">
+
+                <div class="info-block block-info clearfix" ng-click="change(x.id)">
+                    <h5>{{x.item.name}}</h5>
+                    <p>{{x.item.description}}</p>
+                    <p>{{x.item.user.name + " " + x.item.user.surname}}</p>
+                    <span>{{x.item.user.telephone}}</span>
+                    <span>{{x.item.user.email}}</span>
+                    <button ng-click="delete()" class="btn btn-danger">
+                        Удалить с корзины
+                    </button>
+                    <button ng-click="buy()" class="btn btn-success">Купил</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

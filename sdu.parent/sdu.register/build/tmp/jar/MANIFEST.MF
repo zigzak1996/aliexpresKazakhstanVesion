@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Implementation-Title: sdu.register
+Built-At: 2017-12-08/22:39:53
+Implementation-Version: 001
+Built-By: zigzak1996
+Implementation-Vendor: greetgo!
+

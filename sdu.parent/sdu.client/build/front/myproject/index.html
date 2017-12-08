@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <meta charset="utf-8">
+    <title>Manage Site</title>
+    <link href="http://localhost:8080/sdu/myproject/css/bootstrap.css" rel="stylesheet">
+    <link href="http://localhost:8080/sdu/myproject/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://localhost:8080/sdu/myproject/css/angular-material/angular-material.css">
+
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a ui-sref="home" class="navbar-brand">TOVAR NA POVAL</a>
+        </div>
+        <ul class="nav navbar-nav" >
+            <li><a ui-sref="login">Login</a></li>
+            <li><a ui-sref="reg">Registration</a></li>
+        </ul>
+    </div>
+</nav>
+<main ui-view class="main">
+    <h2>HERE</h2>
+    <!-- Here dynamic part of our site -->
+
+</main>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="http://localhost:8080/sdu/myproject/js/bootstrap.js"></script>
+<script src="http://localhost:8080/sdu/myproject/js/angular.js"></script>
+<script src="http://localhost:8080/sdu/myproject/js/app.js"></script>
+</body>
+</html>

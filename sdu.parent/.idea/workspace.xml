@@ -1,0 +1,2575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="114c5c05-858b-4563-aa76-db53f8da8fa4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdu.client/public/templates/views/itemB.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdu.client/public/templates/views/new.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/ItemController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/BoxInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/ItemInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/ItemRegister.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/postgres/ItemDaoPostgres.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/BoxRegisterImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/models/BoxDot.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/models/ItemDot.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdu.register/main/resources/liquibase/postgres/v001/002_user.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/controllers/AdminController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/controllers/ClientController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/controllers/CompanyController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/controllers/LeadController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/controllers/ManagerController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/controllers/UserController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/factories/factory-auth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/angular-animate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/angular-aria.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/angular-material.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/angular-ui-router.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/angular-ui-router.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/mask.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/oldFiles/angular-cookies.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/oldFiles/angular-loader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/oldFiles/angular-messages.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/oldFiles/angular-resource.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/oldFiles/angular-sanitize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/oldFiles/angular-strap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/oldFiles/angular-strap.tpl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/socket-io/directive.socket.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/socket-io/service.socket.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/javascripts/vendors/socket-io/socket.io.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/templates/views/adminCompanyListView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/templates/views/adminLeadListView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/templates/views/adminLeadsHistoryView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/templates/views/adminUsersListView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/templates/views/clientActiveLeadsView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/templates/views/clientAllLeadsView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/templates/views/clientFinishedLeadsView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/templates/views/initView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/templates/views/leadAddView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/templates/views/managerActiveLeadsView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/templates/views/managerNotActiveLeadsListView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/templates/views/ownPageView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/templates/views/regCompanyView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.client/public/templates/views/registrationView.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/AuthController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/ClientController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/CompanyController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/IntroductionController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/LeadController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/ClientListDetails.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/CompanyInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/IntroductionInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/LeadInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/UserInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/AuthRegister.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/ClientRegister.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/CompanyRegister.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/IntroductionRegister.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/LeadRegister.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/AuthDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/CompanyDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/LeadDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/postgres/AuthDaoPostgres.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/postgres/ClientDaoPostgres.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/postgres/CompanyDaoPostgres.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/postgres/LeadDaoPostgres.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/AuthRegisterImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/ClientRegisterImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/CompanyRegisterImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/IntroductionRegisterImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/LeadRegisterImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/models/CompanyDot.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/models/LeadDot.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/resources/liquibase/postgres/v001/002_person_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/main/resources/liquibase/postgres/v001/003_person.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/impl/AuthRegisterImplTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/impl/CompanyRegisterImplTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/impl/LeadRegisterImplTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/impl/SendEmailRegisterImplTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/impl/UserRegisterImplTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/test/asdasd.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/test/dao/AuthTestDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/test/dao/CompanyTestDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/test/dao/LeadTestDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/test/dao/UserTestDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/test/dao/postgres/AuthTestDaoPostgres.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/test/dao/postgres/BeanTestConfigPostgresDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/test/dao/postgres/CompanyTestDaoPostgres.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/test/dao/postgres/LeadTestDaoPostgres.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/test/dao/postgres/UserTestDaoPostgres.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/test/util/BeanConfigMainPostgresTests.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/test/util/MainPostgresTestBeanContainerCreator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.register/test/java/kz/sdu/register/test/util/MainPostgresTestsBeanContainer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/bean_containers/BeanConfigForStandBeanContainer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/bean_containers/SendEmailServerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/bean_containers/StandBeanContainer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/beans/BeanConfigStand.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/beans/CrossOriginFilterRegistration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/beans/JettyControllersRegistration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/beans/PrintRequestParamsRegistration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/beans/StandEducationViews.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/beans/StandServer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/beans/Utf8FilterRegistration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/launcher/LaunchStandServer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/AuthRegisterStandImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/BeanConfigRegisterStandImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/ClientRegisterStandImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/CompanyStandImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/IntroductionRegisterStandImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/LeadRegisterStandImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/UserRegisterStandImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/db/Db.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/model/FuncDot.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/model/PersonDot.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/model/RoleDot.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/model/UserStandModel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/scheduler/MainScheduler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/scheduler/MyConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/scheduler/MyConfigFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/register_stand_imlp/scheduler/MyTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/util/Modules.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/util/StandCommonConstant.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/java/kz/sdu/stand/util/WebAppContextRegistration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/resources/application.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdu.stand/main/resources/log4j.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/ClientDao.java" afterPath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/ItemDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.client/gulpfile.js" afterPath="$PROJECT_DIR$/sdu.client/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.client/public/stylesheets/main.css" afterPath="$PROJECT_DIR$/sdu.client/public/stylesheets/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.client/public/templates/index.html" afterPath="$PROJECT_DIR$/sdu.client/public/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/EmailSendController.java" afterPath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/EmailSendController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/UserController.java" afterPath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/UserCtrlModel.java" afterPath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/UserCtrlModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/UserRegister.java" afterPath="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/UserRegister.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/config/DbConfig.java" afterPath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/config/DbConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/config/MyConfig.java" afterPath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/config/MyConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/UserDao.java" afterPath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/UserRegisterImpl.java" afterPath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/UserRegisterImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/models/UserDot.java" afterPath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/models/UserDot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/util/GCommonConstant.java" afterPath="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/util/GCommonConstant.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.register/main/resources/liquibase/postgres/changelog-master.xml" afterPath="$PROJECT_DIR$/sdu.register/main/resources/liquibase/postgres/changelog-master.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdu.war/webapps/index.html" afterPath="$PROJECT_DIR$/sdu.war/webapps/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/sdu.client/.gradle/" />
+    <ignored path="$PROJECT_DIR$/sdu.client/build/" />
+    <ignored path="$PROJECT_DIR$/sdu.client/out/" />
+    <ignored path="$PROJECT_DIR$/sdu.controller/.gradle/" />
+    <ignored path="$PROJECT_DIR$/sdu.controller/build/" />
+    <ignored path="$PROJECT_DIR$/sdu.controller/out/" />
+    <ignored path="$PROJECT_DIR$/sdu.register/.gradle/" />
+    <ignored path="$PROJECT_DIR$/sdu.register/build/" />
+    <ignored path="$PROJECT_DIR$/sdu.register/out/" />
+    <ignored path="$PROJECT_DIR$/sdu.server/.gradle/" />
+    <ignored path="$PROJECT_DIR$/sdu.server/build/" />
+    <ignored path="$PROJECT_DIR$/sdu.server/out/" />
+    <ignored path="$PROJECT_DIR$/sdu.stand/.gradle/" />
+    <ignored path="$PROJECT_DIR$/sdu.stand/build/" />
+    <ignored path="$PROJECT_DIR$/sdu.stand/out/" />
+    <ignored path="$PROJECT_DIR$/sdu.war/.gradle/" />
+    <ignored path="$PROJECT_DIR$/sdu.war/build/" />
+    <ignored path="$PROJECT_DIR$/sdu.war/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/sdu.war">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sdu.parent" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sdu.parent" type="f1a62948:ProjectNode" />
+                <item name=":sdu.war" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sdu.parent" type="f1a62948:ProjectNode" />
+                <item name=":sdu.war" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sdu.parent" type="f1a62948:ProjectNode" />
+                <item name=":sdu.war" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ItemRegister.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/ItemRegister.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoxRegisterImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/BoxRegisterImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1590">
+              <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1665#1674#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/ItemDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoxDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/BoxDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoxDot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/models/BoxDot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sdu.client/public/javascript/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="209" column="33" lean-forward="true" selection-start-line="209" selection-start-column="33" selection-end-line="209" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoxRegister.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/BoxRegister.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemRegisterImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/ItemRegisterImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1275">
+              <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/ItemController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="41" column="42" lean-forward="false" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+              <folding>
+                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#1119#1120#0" expanded="true" />
+                <element signature="e#1178#1179#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoxController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/BoxController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+              <folding>
+                <element signature="e#960#961#0" expanded="true" />
+                <element signature="e#1012#1013#0" expanded="true" />
+                <element signature="e#1107#1108#0" expanded="true" />
+                <element signature="e#1161#1162#0" expanded="true" />
+                <element signature="e#1249#1250#0" expanded="true" />
+                <element signature="e#1300#1301#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>token</find>
+      <find>user</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/application/gradle" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4.2" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="sdu.parent" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="sdu.parent" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":sdu.client" />
+                <option name="path" value="$PROJECT_DIR$/sdu.client" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":sdu.controller" />
+                <option name="path" value="$PROJECT_DIR$/sdu.controller" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":sdu.register" />
+                <option name="path" value="$PROJECT_DIR$/sdu.register" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":sdu.server" />
+                <option name="path" value="$PROJECT_DIR$/sdu.server" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":sdu.war" />
+                <option name="path" value="$PROJECT_DIR$/sdu.war" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="npm_install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'sdu.parent'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'sdu.parent'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'sdu.parent'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'sdu.parent'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Download and install a local node/npm version." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="nodeSetup" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs 'npm install gulp' to install gulp" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="installGulp" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'sdu.parent'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="beanContainerJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'sdu.parent' (some of the displayed tasks may belong to subprojects)." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="gulp_build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates a war archive with all the compiled classes, the web-app content and the libraries." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="war" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'sdu.parent'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Setup a specific version of npm to be used by the build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="npmSetup" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'sdu.parent'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Install node packages from package.json." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="npmInstall" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateBeanContainerJavas" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Install node packages using Yarn." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="yarn" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'sdu.parent'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Setup a specific version of Yarn to be used by the build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="yarnSetup" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/sdu.client">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="npm_install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':sdu.client'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':sdu.client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':sdu.client'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':sdu.client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Download and install a local node/npm version." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="nodeSetup" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs 'npm install gulp' to install gulp" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="installGulp" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':sdu.client'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':sdu.client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="gulp_build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':sdu.client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Setup a specific version of npm to be used by the build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="npmSetup" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':sdu.client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Install node packages from package.json." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="npmInstall" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Install node packages using Yarn." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="yarn" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':sdu.client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Setup a specific version of Yarn to be used by the build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.client" />
+                <option name="name" value="yarnSetup" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/sdu.controller">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':sdu.controller'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':sdu.controller'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':sdu.controller'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':sdu.controller'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':sdu.controller'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':sdu.controller'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':sdu.controller'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':sdu.controller'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':sdu.controller'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.controller" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/sdu.register">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':sdu.register'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':sdu.register'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':sdu.register'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':sdu.register'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':sdu.register'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':sdu.register'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':sdu.register'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':sdu.register'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':sdu.register'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.register" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/sdu.server">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':sdu.server'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':sdu.server'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':sdu.server'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':sdu.server'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':sdu.server'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':sdu.server'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':sdu.server'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':sdu.server'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':sdu.server'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.server" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/sdu.war">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':sdu.war'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':sdu.war'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':sdu.war'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':sdu.war'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="beanContainerJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':sdu.war'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':sdu.war'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates a war archive with all the compiled classes, the web-app content and the libraries." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="war" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':sdu.war'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':sdu.war'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="generateBeanContainerJavas" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':sdu.war'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="10586976432000" />
+        <entry key="$PROJECT_DIR$/sdu.war/build.gradle" value="2613784704" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="2169603353" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/sdu.client">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.moowork.gradle/gradle-node-plugin/1.1.1/b759df44f7f8bae2fc081816b472bb08d9874e97/gradle-node-plugin-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.moowork.gradle/gradle-node-plugin/1.1.1/43922f22bc6e01127405b3f574c45581d3d71c34/gradle-node-plugin-1.1.1.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/sdu.client" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/sdu.controller">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/sdu.controller" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/sdu.register">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/sdu.register" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/sdu.server">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/sdu.server" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/sdu.stand">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/sdu.stand" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/sdu.war">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/sdu.war" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="sdu.parent" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-tooling-api-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-core-api-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-runtime-api-info-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-jvm-services-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-core-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-launcher-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-base-services-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-messaging-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/ant-launcher-1.9.6.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-cli-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-wrapper-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-build-cache-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-resources-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-base-services-groovy-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-persistent-cache-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-model-groovy-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/ant-1.9.6.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-logging-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-model-core-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-process-services-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-kotlin-dsl-tooling-builders-0.11.1.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/groovy-all-2.4.11.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-docs-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-native-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-kotlin-dsl-tooling-models-0.11.1.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-installation-beacon-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/gradle-kotlin-dsl-0.11.1.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-language-scala-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-plugin-development-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-build-cache-http-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-ide-play-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-testing-base-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-tooling-api-builders-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-signing-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-test-kit-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-antlr-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-dependency-management-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-workers-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-maven-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-ide-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-plugin-use-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-testing-jvm-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-language-native-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-javascript-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-platform-base-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-language-jvm-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-resources-s3-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-ivy-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-resources-gcs-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-reporting-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-build-init-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-announce-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-platform-native-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-testing-native-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-resources-http-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-plugins-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-platform-play-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-resources-sftp-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-jacoco-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-publish-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-ear-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-platform-jvm-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-language-groovy-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-ide-native-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-build-comparison-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-composite-builds-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-language-java-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-diagnostics-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-osgi-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-scala-4.2.jar" />
+                  <option value="$USER_HOME$/application/gradle/lib/plugins/gradle-code-quality-4.2.jar" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/sdu.client/public/javascripts/app.js" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/util/GCommonConstant.java" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/config/MyConfig.java" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/config/DbConfig.java" />
+        <option value="$PROJECT_DIR$/sdu.register/main/resources/liquibase/postgres/v001/002_user.xml" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/models/UserDot.java" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/postgres/AuthDot.java" />
+        <option value="$PROJECT_DIR$/sdu.war/webapps/index.html" />
+        <option value="$PROJECT_DIR$/sdu.war/build.gradle" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/sdu.client/public/templates/views/registration.html" />
+        <option value="$PROJECT_DIR$/sdu.client/public/templates/views/login.html" />
+        <option value="$PROJECT_DIR$/sdu.client/build/front/myproject/js/app.js" />
+        <option value="$PROJECT_DIR$/sdu.register/main/resources/liquibase/postgres/changelog-master.xml" />
+        <option value="$PROJECT_DIR$/sdu.register/main/resources/liquibase/postgres/v001/003_item.xml.fxml" />
+        <option value="$PROJECT_DIR$/sdu.register/main/resources/liquibase/postgres/v001/003_item.xml" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/models/ItemDot.java" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/postgres/ItemDaoPostgres.java" />
+        <option value="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/ItemInfo.java" />
+        <option value="$PROJECT_DIR$/sdu.client/public/templates/index.html" />
+        <option value="$PROJECT_DIR$/sdu.client/public/templates/views/new.html" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/UserCtrlModel.java" />
+        <option value="$PROJECT_DIR$/sdu.client/public/templates/views/mainPage.html" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/UserRegisterImpl.java" />
+        <option value="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/UserRegister.java" />
+        <option value="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/sdu.client/public/templates/views/item.html" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/models/BoxDot.java" />
+        <option value="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/BoxInfo.java" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/postgres/BoxDaoPostgres.java" />
+        <option value="$PROJECT_DIR$/sdu.client/public/templates/views/itemB.html" />
+        <option value="$PROJECT_DIR$/sdu.client/public/templates/views/box.html" />
+        <option value="$PROJECT_DIR$/sdu.client/public/javascript/app.js" />
+        <option value="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/BoxController.java" />
+        <option value="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/BoxRegister.java" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/ItemDao.java" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/BoxDao.java" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/BoxRegisterImpl.java" />
+        <option value="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/ItemController.java" />
+        <option value="$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/ItemRegister.java" />
+        <option value="$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/ItemRegisterImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/sdu.client/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="47" />
+    <option name="y" value="100" />
+    <option name="width" value="1319" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.controller" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="postgres" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="postgres" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.register" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="postgres" type="462c0819:PsiDirectoryNode" />
+              <item name="v001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.war" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.war" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.war" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sdu.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sdu.parent" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sdu.war" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kz.sdu.war" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/v6.11.3/bin/node" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sdu.register/main/resources/liquibase/postgres/v001" />
+      <recent name="$PROJECT_DIR$/sdu.client/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sdu.client" />
+      <recent name="$PROJECT_DIR$/sdu.client/public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.sdu.parent:sdu.war [war]">
+    <configuration name="GenerateAndCompileBeanContainers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="kz.sdu.war.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="kz.sdu.war.GenerateAndCompileBeanContainers" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="sdu.war_test" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="build (1)" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="sdu.war" />
+      <setting name="path" value="file://$PROJECT_DIR$/sdu.war/build.gradle" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/sdu.war" />
+      <setting name="debug" value="false" />
+    </configuration>
+    <configuration name="build (4)" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="sdu.war" />
+      <setting name="path" value="file://$PROJECT_DIR$/sdu.war/build.gradle" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/sdu.war" />
+      <setting name="debug" value="false" />
+    </configuration>
+    <configuration name="build" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="sdu.war" />
+      <setting name="path" value="file://$PROJECT_DIR$/sdu.war/build.gradle" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/sdu.war" />
+      <setting name="debug" value="false" />
+    </configuration>
+    <configuration name="sdu.parent:sdu.war [war]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/sdu.war" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="war" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.GenerateAndCompileBeanContainers" />
+      <item index="1" class="java.lang.String" itemvalue="Groovy.build (4)" />
+      <item index="2" class="java.lang.String" itemvalue="Groovy.build" />
+      <item index="3" class="java.lang.String" itemvalue="Groovy.build (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.sdu.parent:sdu.war [war]" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Gradle.sdu.parent:sdu.war [war]" />
+        <item index="1" class="java.lang.String" itemvalue="Application.GenerateAndCompileBeanContainers" />
+        <item index="2" class="java.lang.String" itemvalue="Groovy.build (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Groovy.build" />
+        <item index="4" class="java.lang.String" itemvalue="Groovy.build (4)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="lastUpdateTimestamp" value="1512467076274" />
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="114c5c05-858b-4563-aa76-db53f8da8fa4" name="Default" comment="" />
+      <created>1512408569216</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1512408569216</updated>
+      <workItem from="1512408570653" duration="36359000" />
+      <workItem from="1512523715363" duration="51405000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="87764000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="47" y="100" width="1323" height="780" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1866252" sideWeight="0.52156866" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24941176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.49411765" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.49411765" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.4972549" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.4972549" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1866252" sideWeight="0.47843137" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.49411765" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25333333" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.49411765" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.4972549" order="4" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1866252" sideWeight="0.52156866" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24941176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.49411765" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.49411765" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.4972549" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.4972549" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1866252" sideWeight="0.47843137" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.49411765" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25333333" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.4972549" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.49411765" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.war/webapps/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.server/main/java/kz.sdu.server/app/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.server/main/java/kz.sdu.server/app/ApplicationBeanContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.server/main/java/kz.sdu.server/app/BeanConfigApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.server/main/java/kz.sdu.server/beans/AppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.server/main/java/kz.sdu.server/beans/BeanConfigServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.server/main/java/kz.sdu.server/beans/ControllerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.server/main/java/kz.sdu.server/beans/Utf8AndTraceResetFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.server/main/java/kz.sdu.server/beans/WarEducationViews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.client/public/templates/views/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.client/build/front/myproject/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.client/build/front/myproject/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/resources/liquibase/postgres/changelog-master.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/resources/liquibase/postgres/v001/003_item.xml.fxml" />
+    <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/LeadInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.client/public/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.client/public/templates/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/SendEmailRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.client/public/templates/views/new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="48" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/models/UserDot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/postgres/BoxDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/postgres/ItemDaoPostgres.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/postgres/UserDaoPostgres.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/ClientListDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/UserRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/resources/liquibase/postgres/v001/002_user.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="43" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/resources/liquibase/postgres/v001/003_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/ItemInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/UserCtrlModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/model/BoxInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.client/public/templates/views/mainPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.client/public/templates/views/item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="79" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/UserRegisterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.client/public/templates/views/itemB.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/models/ItemDot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.client/public/templates/views/box.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="67" lean-forward="false" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/postgres/BoxDaoPostgres.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/BoxController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+          <folding>
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/BoxRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/models/BoxDot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/ItemDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/dao/BoxDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/BoxRegisterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1665#1674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/controller/ItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="41" column="42" lean-forward="false" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+          <folding>
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#1119#1120#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.controller/main/java/kz/sdu/controller/register/ItemRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.register/main/java/kz/sdu/register/impl/ItemRegisterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdu.client/public/javascript/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="209" column="33" lean-forward="true" selection-start-line="209" selection-start-column="33" selection-end-line="209" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
