@@ -73,8 +73,10 @@ public class ItemRegisterImpl implements ItemRegister {
                 return "YESI";
             }
             else{
+                System.out.println("gemoroi");
                 ItemDot item = itemDaoBeanGetter.get().selectOne(id);
-                if(item.userid == userid) {
+                if(item.userid.equals(userid)) {
+                    System.out.println("gemoroii2");
                     itemDaoBeanGetter.get().updateItem(name, description, id);
                     return "YESU";
                 }
@@ -92,9 +94,28 @@ public class ItemRegisterImpl implements ItemRegister {
         String userid = userDaoBeanGetter.get().getUserIdByToken(token);
         if (userid.length()>0){
             itemDaoBeanGetter.get().deleteItem(id);
-            boxDaoBeanGetter.get().deleteByAllItemId(id);
+            boxDaoBeanGetter.get().deleteByAllItemId(String.valueOf(id));
             return "Delate";
         }
         return "no";
+    }
+
+    @Override
+    public List<ItemInfo> myAllItems(String input) {
+        JSONObject json = new JSONObject(input);
+        String token = json.getString("token");
+        String userid = userDaoBeanGetter.get().getUserIdByToken(token);
+        List<ItemDot> items = itemDaoBeanGetter.get().myAllItems(userid);
+        List<ItemInfo> findAll = new ArrayList<ItemInfo>();
+        for (ItemDot item : items) {
+            System.out.println(item.userid);
+            UserDot user = userDaoBeanGetter.get().getWholeSelect(item.userid);
+            if(user!=null) {
+                UserCtrlModel model = new UserCtrlModel(user.id,user.name,user.surname,user.email,user.password,user.telephone,user.birthday,user.isAccept,user.isWho);
+                ItemInfo it = new ItemInfo(item.id, item.name, item.userid, item.description, model);
+                findAll.add(it);
+            }
+        }
+        return findAll;
     }
 }

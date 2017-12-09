@@ -41,4 +41,10 @@ public class ItemController implements Controller {
     public String deleteItem(@RequestInput String input){
         return itemRegister.get().deleteItem(input);
     }
+
+    @ToJson
+    @Mapping("/myitems")
+    public List<ItemInfo> myAllItems(@RequestInput String input){
+        return itemRegister.get().myAllItems(input);
+    }
 }

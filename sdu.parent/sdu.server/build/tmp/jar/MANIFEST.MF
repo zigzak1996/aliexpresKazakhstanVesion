@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Implementation-Title: sdu.server
-Built-At: 2017-12-08/22:39:53
+Built-At: 2017-12-09/05:50:34
 Implementation-Version: 001
 Built-By: zigzak1996
 Implementation-Vendor: greetgo!

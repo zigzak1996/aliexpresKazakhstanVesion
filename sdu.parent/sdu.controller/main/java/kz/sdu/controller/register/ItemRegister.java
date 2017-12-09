@@ -9,4 +9,6 @@ public interface ItemRegister {
     List<ItemInfo> search(String text);
     String addItem(String input);
     String deleteItem(String input);
+
+    List<ItemInfo> myAllItems(String input);
 }

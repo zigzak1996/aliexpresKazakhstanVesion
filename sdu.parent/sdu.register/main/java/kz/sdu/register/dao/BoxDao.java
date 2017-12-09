@@ -26,5 +26,5 @@ public interface BoxDao {
     void deleteById(@Param("id") int id);
 
     @Delete("delete from boxtable where itemid = #{id}")
-    void deleteByAllItemId(@Param("id") int id);
+    void deleteByAllItemId(@Param("id") String id);
 }

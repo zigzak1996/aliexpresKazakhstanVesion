@@ -53,6 +53,7 @@ public class BoxRegisterImpl implements BoxRegister {
         List<BoxDot> boxes = boxDaoBeanGetter.get().allIdBoxForUser(userid);
 
         for (BoxDot box : boxes){
+            if (box == null)continue;
             ItemDot item = itemDaoBeanGetter.get().selectOne(box.itemid);
             UserDot user = userDaoBeanGetter.get().getWholeSelect(item.userid);
             UserCtrlModel u = new UserCtrlModel(user.id,user.name,user.surname,user.email,user.password,user.telephone,user.birthday,user.isAccept,user.isWho);
@@ -102,12 +103,12 @@ public class BoxRegisterImpl implements BoxRegister {
         JSONObject json = new JSONObject(input);
         String token = json.getString("token");
         int id = json.getInt("id");
-
+        Integer x = new Integer(id);
         String userid = userDaoBeanGetter.get().getUserIdByToken(token);
         if (userid != null){
             BoxDot box = boxDaoBeanGetter.get().selectById(id);
             itemDaoBeanGetter.get().deleteItem(box.itemid);
-            boxDaoBeanGetter.get().deleteByAllItemId(id);
+            boxDaoBeanGetter.get().deleteByAllItemId(String.valueOf(box.itemid));
             return "DELETE";
         }
         return "NO";

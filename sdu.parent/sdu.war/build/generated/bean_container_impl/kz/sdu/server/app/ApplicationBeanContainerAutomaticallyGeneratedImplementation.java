@@ -415,6 +415,7 @@ public final class ApplicationBeanContainerAutomaticallyGeneratedImplementation 
       }
       try {
         kz.sdu.register.impl.ItemRegisterImpl localValue = new kz.sdu.register.impl.ItemRegisterImpl();
+        localValue.boxDaoBeanGetter = (kz.greetgo.depinject.core.BeanGetter<kz.sdu.register.dao.BoxDao>)(java.lang.Object)getter_native_BoxDaoPostgres_13;
         localValue.itemDaoBeanGetter = (kz.greetgo.depinject.core.BeanGetter<kz.sdu.register.dao.ItemDao>)(java.lang.Object)getter_native_ItemDaoPostgres_14;
         localValue.userDaoBeanGetter = (kz.greetgo.depinject.core.BeanGetter<kz.sdu.register.dao.UserDao>)(java.lang.Object)getter_native_UserDaoPostgres_15;
         cachedValue_native_ItemRegisterImpl_17.set(localValue);
